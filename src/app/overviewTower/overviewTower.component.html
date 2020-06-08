@@ -1,0 +1,17 @@
+<div class="container-fluid body-main px-0">
+    <div class="row imgScheme-block align-content-center">
+        <button 
+            class="btn btn-back" 
+            routerLink="/" 
+            type="button"
+            id="backButton">
+            <img class="backArrow" src="../../assets/img/ico/left-arrow.png" alt="">
+        </button>
+        <object 
+            id="svg" 
+            
+            [attr.data]="sanitizedURL()" 
+            type="image/svg+xml">
+        </object>
+    </div>
+</div>

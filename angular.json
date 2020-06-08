@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pcp-tour"
+    }
+  },
+  "defaultProject": "pcp-tour",
+  "cli": {
+    "analytics": "5e4da1c7-d5a9-423c-ba09-b4d6a1fe0353"
+  }
 }

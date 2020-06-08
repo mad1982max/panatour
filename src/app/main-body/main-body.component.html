@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+    <div class="col wrapperObject" *ngFor="let tower of seaItemArr">
+
+      <div class="wrapperBGObject">
+        <a 
+            [class.imgGrey]="!tower.isActive" 
+            [routerLink]="tower.isActive ? ['overviewTower', tower.name]: null">
+          <img [attr.src]="'../../assets/img/mainPage/'+tower.name+'.jpg'" alt="">
+        </a>
+      </div>
+      <div class="title">
+        <div class="nameObject">{{tower.name}}</div>
+      </div>
+    </div>
+  </div>
+</div>

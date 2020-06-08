@@ -1,0 +1,45 @@
+:host {
+    color: rgb(41, 38, 204);
+}
+
+img {
+    width: 100%; 
+    transition: transform 500ms;
+}
+
+.main {
+    max-width: 991px;
+    background: #E9EDEF;
+}
+
+.wrapperObject {
+    padding: 10px; 
+    /* max-width: 200px;    */
+}
+
+.wrapperBGObject {
+    overflow: hidden;
+}
+
+.wrapperObject:hover {
+    cursor: pointer;
+}
+
+.wrapperObject:hover img{
+    transform: translate(0, -10px) scale(1.2);
+}
+
+.title {
+    background: rgb(253, 253, 253);
+    padding: 10px 10px;
+}
+
+.nameObject {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(15, 36, 44);
+}
+
+.imgGrey {
+    filter: grayscale(100%);
+}

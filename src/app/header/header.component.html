@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div *ngIf="downloadFlag" class="row header justify-content-between ">
+    <div class="col-auto">
+      {{titlePage}}
+    </div>
+    <div class="col-auto px-0 btn-menu d-flex">
+      <div ngbDropdown display="dynamic" placement="bottom-right" class="d-flex align-content-center">
+        <button ngbDropdownToggle class="d-flex btn btn-menu align-items-center" type="button" id="dropdownMenuButton">
+          {{nameDownload}}
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+          <a ngbDropdownItem target="_blank" rel="noopener noreferrer" href="https://viscoas-my.sharepoint.com/:f:/g/personal/m_tiutiunnyk_visco_no/Ei74m8fv3QhFvFMxEEY70BABoEq3QSvPTqdGaQNvc4AMFg?e=Jwnxhl
+                        ">
+            PTS DATA
+          </a>
+          <a ngbDropdownItem target="_blank" rel="noopener noreferrer"
+            href="https://viscoas-my.sharepoint.com/:f:/g/personal/m_tiutiunnyk_visco_no/Ej9iMRnZzLNLsMDs1WBiCXEBCuYCOvtsNENsZtCItdQH1A?e=S5e7fK">
+            RCS DATA
+          </a>
+          <a ngbDropdownItem target="_blank" rel="noopener noreferrer" href="https://viscoas-my.sharepoint.com/:f:/g/personal/m_tiutiunnyk_visco_no/EglJ2Ohk8NdKnrVrUn7jHDUBYivDNDzg68cGWf5sleM9gg
+                    ">
+            POD DATA
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!downloadFlag" class='row header'>
+    <div class="col header pl-2" style="background:black; color:white">
+      PCP Portal
+    </div>
+  </div>
+</div>
